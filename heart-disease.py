@@ -251,10 +251,10 @@ elif nav == "Modelling":
     var = st.select_slider("Select Model", ("Before Tuning", "After Tuning", "ROC-AUC", "Kesimpulan"))
     if var == "Before Tuning":
         accuracy_score = {
-            'Logistic Regression': 0.88,
-            'Decision Tree': 0.79,
-            'Random Forest': 0.91,
-            'MLP Classifier': 0.89,
+            'Logistic Regression': 0.81,
+            'Decision Tree': 0.70,
+            'Random Forest': 0.84,
+            'MLP Classifier': 0.84,
         }
         st.write('''
         **Model Before Tuning**
@@ -264,14 +264,14 @@ elif nav == "Modelling":
         st.dataframe(pd.DataFrame(accuracy_score.items(), columns=['Model', 'Accuracy Score']))
         st.write('''
         Berdasarkan hasil akurasi dari model sebelum dilakukan tuning, dapat dilihat bahwa model dengan akurasi tertinggi
-        adalah Random Forest dan MLP Classifier dengan akurasi 0.87.
+        adalah Random Forest dan MLP Classifier dengan akurasi 0.84.
         ''')
 
     elif var == "After Tuning":
         accuracy_score = {
-            'Logistic Regression': 0.87,
-            'Decision Tree': 0.83,
-            'Random Forest': 0.88,
+            'Logistic Regression': 0.88,
+            'Decision Tree': 0.79,
+            'Random Forest': 0.91,
             'MLP Classifier': 0.89,
         }
         st.write('''
@@ -282,7 +282,7 @@ elif nav == "Modelling":
         st.dataframe(pd.DataFrame(accuracy_score.items(), columns=['Model', 'Accuracy Score']))
         st.write('''
         Berdasarkan hasil akurasi dari model setelah dilakukan tuning, dapat dilihat bahwa model dengan akurasi tertinggi
-        adalah MLP Classifier dengan akurasi 0.89.
+        adalah Random Forest Classifier dengan akurasi 0.91.
         ''')
 
     elif var == "Kesimpulan":
