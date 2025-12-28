@@ -249,10 +249,10 @@ elif nav == "Modelling":
     var = st.select_slider("Select Model", ("Before Tuning", "After Tuning", "ROC-AUC", "Kesimpulan"))
     if var == "Before Tuning":
         accuracy_score = {
-            'Logistic Regression': 0.85,
-            'Decision Tree': 0.78,
-            'Random Forest': 0.87,
-            'MLP Classifier': 0.87,
+            'Logistic Regression': 0.88,
+            'Decision Tree': 0.79,
+            'Random Forest': 0.91,
+            'MLP Classifier': 0.89,
         }
         st.write('''
         **Model Before Tuning**
