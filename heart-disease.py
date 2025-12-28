@@ -93,7 +93,9 @@ def heart():
     if st.sidebar.button("GO!"):
         df = input_df.copy()
         st.write(df)
-        model = pickle.load(open('Model\general.pkl', 'rb'))
+    with open('Model/general.pkl', 'rb') as f:
+    model = pickle.load(f)
+
         prediction = model.predict(df)
         result = ['No Heart Disease' if prediction == 0 else 'Heart Disease']
         with st.spinner('Wait for it...'):
