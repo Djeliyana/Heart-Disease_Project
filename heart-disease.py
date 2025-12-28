@@ -308,16 +308,11 @@ elif nav == "About":
     st.write('''
     **Contact Me**
     
-    - [LinkedIn](##)
+    - [LinkedIn](#https://www.linkedin.com/in/djeliyanatalaba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app#)
     - [Github](##)
     - [Instagram](##)
     - [Facebook](##)
-    - [Twitter](##)
     ''')
 
-    select_item = st.selectbox("My Project Preview", ('', 'Iris Prediction', 'Housing Price Prediction'))
-    if select_item == "Iris Prediction":
-        st.header("Ini Contoh Iris")
-    elif select_item == "Housing Price Prediction":
-        st.header("Ini Contoh Housing Price Prediction")
+    
 
