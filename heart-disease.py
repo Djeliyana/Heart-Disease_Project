@@ -106,7 +106,7 @@ if nav == "Home":
     st.write('''
     **Machine Learning & AI Track**
     
-    Hallo, saya [Djeliyana Talaba ], saya merupakan seorang sarjana matematika dari
+    Hallo, saya Djeliyana Talaba, saya merupakan seorang sarjana matematika dari
     salah satu perguruan tinggi di Indonesia yaitu Universitas Tadulako. Saya mengambil jurusan Matematika Murni yang berfokus pada bidang riset dan operasi data. Saya mengikuti kelas Machine 
     Learning & AI di DQLab Academy. Ini adalah capstone project saya.
     ''')
